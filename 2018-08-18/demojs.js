@@ -1,20 +1,15 @@
-var a = 0;
-var Image=document.getElementById('Image')
-function myFunction(){
+var tat = false;
+function thayDoi(){
+    var light = document.getElementById("myImage");
+    tat = !tat;
     
-
-  
-    if(a==0){
-      
-        document.getElementById("Image").innerHTML = "src=./pic_buloff.gif";
-         
-         
+    if (tat == false){
+        light.src="./pic_bulboff.gif";
+       
+    } else   {
+        light.src='./pic_bulbon.gif';
+       
     }
-    else
-    {
-       Image.src='./pic_buloff.gif';
-        
-    }
-
+    
+    console.log(light.src, tat)
 }
-

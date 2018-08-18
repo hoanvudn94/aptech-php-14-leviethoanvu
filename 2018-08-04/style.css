@@ -1,23 +1,9 @@
 b {
     color:black;
 }
-#tieu-de {
-    background-color:yellow;
-    width: 1200px;
-    border: 10px solid brown;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    
-    
-}
-div {
-    background-color: lightgrey;
-    width: 800px;
-    border: 70px solid green;
-    padding: 70px;
-    margin: 70px;
-}
-#bang{
-    text-indent: 50px;
+
+
+.content{
+    width: 50%;
+    display: flex;
 }
