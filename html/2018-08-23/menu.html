@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    <title>button</title>
+    
+   
+</head>
+<body>
+    <div id="js-div" class="d-block" style="height: 100px; background-color:blue; ">12312313</div>
+    <button onclick="anHien()"> 3 gach</button>
+    <script>
+        function anHien(){
+            var div = document.getElementById('js-div');
+            console.log(div.classList);
+            if (div.classList.contains('d-none'))
+            {
+                div.classList.remove('d-none');
+                div.classList.add('d-block');
+            }
+           else{
+               
+            div.classList.remove('d-block');
+                div.classList.add('d-none');
+           }
+        }
+    </script>
+</body>    

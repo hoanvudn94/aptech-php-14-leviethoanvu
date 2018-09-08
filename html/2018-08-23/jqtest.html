@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        
+  
+  <body>
+      <h1 id="name" >12313123123</h1>
+      <button id="js-an">an</button>
+      <button id="js-hien">hien</button>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+          $(document).ready(function(){
+              $('#js-an').click(function(){
+                  $('#name').hide("slow");
+              });
+          });
+          $(document).ready(function(){
+              $('#js-hien').click(function(){
+                  $('#name').show("slow");
+              });
+          });
+      </script>
+
+
+</body>
