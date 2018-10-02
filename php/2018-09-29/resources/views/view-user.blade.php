@@ -24,8 +24,8 @@
   @foreach ($nguoi_dung as $key => $user)
     <tr>
       <td>{{ $key+1 }}</td>
-      <td>{{$nguoi_dung->name}} </td>
-      <td>{{$nguoi_dung->email}} </td>
+      <td>{{$user->name}} </td>
+      <td>{{$user->email}} </td>
     </tr>
   @endforeach
   </tbody>
