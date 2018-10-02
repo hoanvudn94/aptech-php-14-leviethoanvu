@@ -25,14 +25,24 @@
     <tr>
       <td>{{ $key+1 }}</td>
       <td>{{$user->name}} </td>
-      <td>{{$user->email}} </td>
+      <td>{{$user->email}} </td> 
+      <td><form action="http://localhost/aptech-php-14-leviethoanvu/php/2018-09-29/public/xoaNguoiDung/{{$user->id}}" method="POST">
+{{csrf_field()}}
+<button>xoa</button>
+</form></td> 
+<td><form action="http://localhost/aptech-php-14-leviethoanvu/php/2018-09-29/public/xemMotNguoiDung/{{$user->id}}" method="POST">
+{{csrf_field()}}
+<button>xem</button>
+</form></td> 
     </tr>
   @endforeach
   </tbody>
 </table>
+
       </div>
     </div>
   </div>
+  
 
 
 

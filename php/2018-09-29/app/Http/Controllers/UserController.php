@@ -19,6 +19,13 @@ class UserController extends Controller
     }
     function xoaNguoiDung($id)
     {
-        return 'abc';
+        $xoaNguoiDung = User::destroy($id);
+        $nguoi_dung = User::all();
+        return view('users',['nguoi_dung'=>$xoaNguoiDung]);
     }
-}
+    public function delete($id){
+        $nguoi_dung = User::find($id);
+        return view('delete',['nguoi_dung'=>$xoaNguoiDung]);
+    }
+    }
+
